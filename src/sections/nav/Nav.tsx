@@ -8,7 +8,7 @@ const Nav = () => {
       <Container className="flex flex-wrap justify-between items-end">
         <div>
           <div className="xl:text-6xl text-4xl flex gap-2">
-            <div className="italic font-bold">
+            <div className="italic font-black">
               <span className="text-sky-500">D</span>
               <span className="text-blue-800">L</span>
               <span className="text-red-600">M</span>
@@ -20,19 +20,23 @@ const Nav = () => {
           </div>
         </div>
 
-        <div className="xl:text-xl">
-          <div>
+        <div className="xl:text-xl underline">
+          <a href="tel:06504848456" className="block">
             <PiPhoneFill className="inline-block mr-2" />
             0650-4848-456
-          </div>
-          <div>
+          </a>
+          <a
+            href="https://www.google.com/maps/search/46.62022448430154,+14.447911741640713"
+            target="_blank"
+            className="block"
+          >
             <FaLocationPin className="inline-block mr-2" />
             Bahnweg 20, 9131 Grafenstein
-          </div>
-          <div>
+          </a>
+          <a href="mailto:dlmauto@gmx.at" className="block">
             <FaEnvelope className="inline-block mr-2" />
             dlmauto@gmx.at
-          </div>
+          </a>
         </div>
       </Container>
     </nav>

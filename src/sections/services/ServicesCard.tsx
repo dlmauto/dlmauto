@@ -1,4 +1,4 @@
-const HeroCard = ({ icon, text }: { icon: any; text: string }) => {
+const ServicesCard = ({ icon, text }: { icon: any; text: string }) => {
   return (
     <div className=" grid justify-items-center items-center rounded-xl p-4 text-6xl gap-2">
       <div>{icon}</div>
@@ -7,4 +7,4 @@ const HeroCard = ({ icon, text }: { icon: any; text: string }) => {
   );
 };
 
-export default HeroCard;
+export default ServicesCard;
