@@ -8,7 +8,7 @@ body {
 }
 
 h2 {
-  @apply text-3xl font-bold mb-4;
+  @apply text-3xl font-bold mb-2;
 }
 
 section {

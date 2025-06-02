@@ -1,5 +1,3 @@
-import Logo from "../../common/Logo";
-
 import { LuClock } from "react-icons/lu";
 
 const WorkDayRange = ({ time }: { time: string }) => {
