@@ -3,5 +3,14 @@
 @tailwind utilities;
 
 body {
+  @apply text-lg;
   font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  @apply text-3xl font-bold mb-4;
+}
+
+section {
+  @apply my-8 xl:px-0 px-2;
 }

@@ -10,7 +10,7 @@ const Gallery = () => {
   });
 
   const data = Object.values(imageModules) as string[];
-
+  const [showOverlay, setShowOverlay] = useState<boolean>(false);
   return (
     <div className="bg-black overflow-hidden">
       <Container className="flex items-center justify-center text-white text-xl xl:text-3xl xl:h-[600px] h-[300px] relative w-full  ">
@@ -21,8 +21,20 @@ const Gallery = () => {
             alt=""
           />
 
-          <img src={data[currentIndex]} className="" alt="" />
-
+          <img
+            src={data[currentIndex]}
+            className="cursor-pointer"
+            alt=""
+            onClick={() => setShowOverlay(true)}
+          />
+          {showOverlay && (
+            <div
+              onClick={() => setShowOverlay(false)}
+              className="z-10 fixed top-0 right-0 w-full h-screen bg-black/50 cursor-pointer  flex items-center justify-center overflow-y-auto"
+            >
+              <img src={data[currentIndex]} className="max-h-[80dvh]" alt="" />
+            </div>
+          )}
           <img
             src={data[(currentIndex + 2) % data.length]}
             className="opacity-20  "
