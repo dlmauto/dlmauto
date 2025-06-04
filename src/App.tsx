@@ -12,6 +12,15 @@ const App = () => {
       <Gallery />
       <Services />
       <Info />
+      <footer className="text-center text-sm ">
+        Developed by{" "}
+        <a
+          className="underline"
+          href="https://matejabogdanovic.github.io/matejabogdanovic/"
+        >
+          Mateja Bogdanović
+        </a>
+      </footer>
     </>
   );
 };
